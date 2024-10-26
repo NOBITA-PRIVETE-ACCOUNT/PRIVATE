@@ -8,13 +8,13 @@
 
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
  
-![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
-![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/VIPNOBITAMUSIC_REPO?style=social)
+![Stars](https://img.shields.io/github/stars/vishalpandeynkp1/NOBITA-TEAM?style=social)
+![Forks](https://img.shields.io/github/forks/vishalpandeynkp1/NOBITA-TEAM?style=social)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 [![Vishal's GitHub Profile](https://github-readme-stats.vercel.app/api?username=vishalpandeynkp1&show_icons=true&theme=flag-india)](https://github.com/vishalpandeynkp1) 
- [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
+ [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/NOBITA-TEAM.gif)](https://github.com/vishalpandeynkp1)
    [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -53,7 +53,7 @@
 <h3> 𝗛𝗘𝗥𝗢𝗞𝗨 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗕𝗨𝗧𝗧𝗢𝗡 </h3>
 
 <p align="center">
-    <a href="https://dashboard.heroku.com/new?template=https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO">
+    <a href="https://dashboard.heroku.com/new?template=https://github.com/vishalpandeynkp1/NOBITA-TEAM">
         <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-bringle?style=for-the-badge&logo=heroku" width="220" height="38.45"/>
     </a>
 </p>
@@ -74,9 +74,9 @@
 </h3>
 
 ### 🖇 VPS Deployment
-- Clone repo: `git clone https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO && cd VIPNOBITAMUSIC_REPO`
+- Clone repo: `git clone https://github.com/vishalpandeynkp1/NOBITA-TEAM && cd NOBITA-TEAM`
 - Setup by: `bash setup`
-- Fill [Extra Variables](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/master/sample.env) by `nano .env`, save changes with `CTRL+X`, then `y`, then `Enter`
+- Fill [Extra Variables](https://github.com/vishalpandeynkp1/NOBITA-TEAM/blob/master/sample.env) by `nano .env`, save changes with `CTRL+X`, then `y`, then `Enter`
 - Install tmux: `sudo apt install tmux && tmux`
 - Run the bot: `bash start`
 - To exit tmux session: Press `Ctrl+b` and then `d`
