@@ -32,9 +32,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from NOBITAMUSICS import LOGGER, YouTube, app
-from NOBITAMUSICS.misc import db
-from NOBITAMUSICS.utils.database import (
+from NOBITAMUSIC import LOGGER, YouTube, app
+from NOBITAMUSIC.misc import db
+from NOBITAMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
