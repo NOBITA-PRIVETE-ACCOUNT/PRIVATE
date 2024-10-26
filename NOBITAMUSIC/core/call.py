@@ -49,11 +49,11 @@ from NOBITAMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from NOBITAMUSICS.utils.exceptions import AssistantErr
-from NOBITAMUSICS.utils.formatters import check_duration, seconds_to_min, speed_converter
-from NOBITAMUSICS.utils.inline.play import stream_markup, telegram_markup
-from NOBITAMUSICS.utils.stream.autoclear import auto_clean
-from NOBITAMUSICS.utils.thumbnails import gen_thumb
+from NOBITAMUSIC.utils.exceptions import AssistantErr
+from NOBITAMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from NOBITAMUSIC.utils.inline.play import stream_markup, telegram_markup
+from NOBITAMUSIC.utils.stream.autoclear import auto_clean
+from NOBITAMUSIC.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
