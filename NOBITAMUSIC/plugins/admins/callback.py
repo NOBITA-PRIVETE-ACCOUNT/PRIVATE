@@ -12,7 +12,7 @@ from config import (
     TELEGRAM_VIDEO_URL,
     adminlist,
 )
-from NOBITQMUSIC import YouTube, app
+from NOBITAMUSIC import YouTube, app
 from NOBITAMUSIC.core.call import NOBITA as NOBITA
 from NOBITAMUSIC.misc import SUDOERS, db
 from NOBITAMUSIC.utils.database import (
