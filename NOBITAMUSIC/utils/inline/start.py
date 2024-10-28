@@ -9,7 +9,7 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💠 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 💠",
+                text="💠 α∂∂ мє ιη уσυя ⅁яσυρѕ 💠",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
@@ -38,7 +38,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="۞ 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="settings_back_helper"
+                text="۞ нєℓρ αη∂ ¢σммαη∂ ۞", callback_data="settings_back_helper"
             )
         ],
     ]
@@ -61,7 +61,7 @@ def music_start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💠 ᴀᴅᴅ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ 💠",
+                text="💠 α∂∂ мє ιη уσυя ⅁яσυρѕ 💠",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -69,6 +69,6 @@ def music_start_panel(_):
             InlineKeyboardButton(text="ᴀʙᴏᴜᴛ 📝", callback_data="about"),
             InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 🥀", callback_data="support"),
         ],
-        [InlineKeyboardButton(text="۞ ғᴇᴀᴛᴜʀᴇ ۞", callback_data="feature")],
+        [InlineKeyboardButton(text="۞ нєℓρ αη∂ ¢σммαη∂ ۞", callback_data="feature")],
     ]
     return buttons
