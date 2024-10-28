@@ -1,3 +1,13 @@
+
+# Copyright (C) 2024 by VISHAL-PANDEY@Github, < https://github.com/vishalpandeynkp1 >.
+#
+# This file is part of < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/master/LICENSE >
+#
+# All rights reserved.
+#
+
 import uvloop
 
 uvloop.install()
@@ -24,7 +34,7 @@ class NOBITABot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            "NOBITAMUSICS",
+            "NOBITA",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -149,4 +159,3 @@ class NOBITABot(Client):
                 LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")
 
         LOGGER(__name__).info(f"MusicBot Started as {self.name}")
-
