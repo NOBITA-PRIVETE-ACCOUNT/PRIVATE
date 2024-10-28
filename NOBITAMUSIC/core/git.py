@@ -1,12 +1,3 @@
-# Copyright (C) 2024 by VISHAL-PANDEY@Github, < https://github.com/vishalpandeynkp1 >.
-#
-# This file is part of < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import asyncio
 import shlex
 from typing import Tuple
@@ -53,6 +44,7 @@ def git():
         LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
     except GitCommandError:
         LOGGER(__name__).info(f"Invalid Git Command")
+        return  # Early return to prevent further execution
     except InvalidGitRepositoryError:
         repo = Repo.init()
         if "origin" in repo.remotes:
@@ -60,10 +52,14 @@ def git():
         else:
             origin = repo.create_remote("origin", UPSTREAM_REPO)
         origin.fetch()
-        repo.create_head(
-            config.UPSTREAM_BRANCH,
-            origin.refs(config.UPSTREAM_BRANCH),
-        )
+        
+        # Check if the branch exists before creating it
+        if config.UPSTREAM_BRANCH not in repo.branches:
+            repo.create_head(
+                config.UPSTREAM_BRANCH,
+                origin.refs[config.UPSTREAM_BRANCH],
+            )
+        
         repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
             origin.refs[config.UPSTREAM_BRANCH]
         )
@@ -80,5 +76,6 @@ def git():
         nrs.pull(config.UPSTREAM_BRANCH)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
+    
     install_req("pip3 install --no-cache-dir -r requirements.txt")
     LOGGER(__name__).info(f"Fetched Updates from: {REPO_LINK}")
