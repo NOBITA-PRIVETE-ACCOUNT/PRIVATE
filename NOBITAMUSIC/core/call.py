@@ -1,4 +1,3 @@
-
 # Copyright (C) 2024 by VISHAL-PANDEY@Github, < https://github.com/vishalpandeynkp1 >.
 #
 # This file is part of < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO > project,
@@ -33,9 +32,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from NOBITAMUSIC import LOGGER, YouTube, app
-from NOBITAMUSIC.misc import db
-from NOBITAMUSIC.utils.database import (
+from NOBITAMUSICS import LOGGER, YouTube, app
+from NOBITAMUSICS.misc import db
+from NOBITAMUSICS.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -50,11 +49,11 @@ from NOBITAMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from NOBITAMUSIC.utils.exceptions import AssistantErr
-from NOBITAMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from NOBITAMUSIC.utils.inline.play import stream_markup, telegram_markup
-from NOBITAMUSIC.utils.stream.autoclear import auto_clean
-from NOBITAMUSIC.utils.thumbnails import gen_thumb
+from NOBITAMUSICS.utils.exceptions import AssistantErr
+from NOBITAMUSICS.utils.formatters import check_duration, seconds_to_min, speed_converter
+from NOBITAMUSICS.utils.inline.play import stream_markup, telegram_markup
+from NOBITAMUSICS.utils.stream.autoclear import auto_clean
+from NOBITAMUSICS.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
@@ -113,7 +112,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="NOBITYAString4",
+            name="NOBITAString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
