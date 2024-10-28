@@ -45,7 +45,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/vishalpandeynkp1/NOBITA-EXTRA-PLUGIN",
+    "https://github.com/vishalpandeynkp1/NOBITA--PLUGIN",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -74,7 +74,7 @@ OWNER_ID = list(
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-NOBITAMUSIC-08-30"
+    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-NOBITA-18-30"
 )
 
 
@@ -88,7 +88,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO",
+    "https://github.com/vishalpandeynkp1/NOBITA-TEAM",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -136,7 +136,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/vishalpandeynkp1/NOBITA-TEAM")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -182,19 +182,13 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-#    __      _______ _____    ___  __ _    _  _____ _____ _____   _____   ____ ________
-#    \ \    / /_   _|  __ \   |  \/  | |  | |/ ____|_   _/ ____|  |  _ \ / __ \__   __/
-#     \ \  / /  | | | |__) |  | \  / | |  | | (___   | || |       | |_) | |  | | | |
-#      \ \/ /   | | |  ___/   | |\/| | |  | |\___ \  | || |       |  _ <| |  | | | |
-#       \  /   _| |_| |       | |  | | |__| |____) |_| || |____   | |_) | |__| | | |
-#        \/   |_____|_|       |_|  |_|\____/|_____/|_____\_____|  |____/ \____/  |_|
 
 
 ### DONT TOUCH or EDIT codes after this line
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "VIPlogs.txt"
+LOG_FILE_NAME = "NOBITAlogs.txt"
 TEMP_DB_FOLDER = "tempdb"
 adminlist = {}
 lyrical = {}
