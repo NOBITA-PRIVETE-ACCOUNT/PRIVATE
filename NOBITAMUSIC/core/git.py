@@ -32,46 +32,45 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 
 def git():
-    REPO_LINK = config.UPSTREAM_REPO
+    REPO_LINK = config.UPSTREAM_REPO  # Ensure this is set correctly in your config
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
         UPSTREAM_REPO = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
     else:
         UPSTREAM_REPO = config.UPSTREAM_REPO
+    
     try:
         repo = Repo()
-        LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
-    except GitCommandError:
-        LOGGER(__name__).info(f"Invalid Git Command")
-        return  # Early return to prevent further execution
-    except InvalidGitRepositoryError:
+        LOGGER(__name__).info("Git Client Found [VPS DEPLOYER]")
+    except (GitCommandError, InvalidGitRepositoryError):
         repo = Repo.init()
         if "origin" in repo.remotes:
             origin = repo.remote("origin")
         else:
             origin = repo.create_remote("origin", UPSTREAM_REPO)
-        origin.fetch()
-        
+            origin.fetch()
+
         # Check if the branch exists before creating it
         if config.UPSTREAM_BRANCH not in repo.branches:
-            repo.create_head(
-                config.UPSTREAM_BRANCH,
-                origin.refs[config.UPSTREAM_BRANCH],
-            )
-        
+            try:
+                # Try to create the branch from the origin if it exists
+                repo.create_head(
+                    config.UPSTREAM_BRANCH,
+                    origin.refs[config.UPSTREAM_BRANCH],
+                )
+            except Exception as e:
+                LOGGER(__name__).error(f"Could not create branch: {e}")
+                return  # Early return on error
+
         repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
             origin.refs[config.UPSTREAM_BRANCH]
         )
         repo.heads[config.UPSTREAM_BRANCH].checkout(True)
 
-        try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
-        except BaseException:
-            pass
-
     nrs = repo.remote("origin")
     nrs.fetch(config.UPSTREAM_BRANCH)
+
     try:
         nrs.pull(config.UPSTREAM_BRANCH)
     except GitCommandError:
