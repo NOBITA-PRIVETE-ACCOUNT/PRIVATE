@@ -27,7 +27,7 @@ from NOBITAMUSIC.utils.database import (
 from NOBITAMUSIC.utils.decorators.language import LanguageStart
 from NOBITAMUSIC.utils.formatters import get_readable_time
 from NOBITAMUSIC.utils.functions import MARKDOWN, WELCOMEHELP
-from NOBITAMUSIC.utils.inline import alive_panel, private_panel, start_pannel
+from NOBITAMUSIC.utils.inline import alive_panel, private_panel, start_pannel, music_start_panel
 
 from .help import paginate_modules
 
@@ -215,7 +215,7 @@ async def start_comm(client, message: Message, _):
                     f"{message.from_user.mention} ʜᴀs ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ<code> ᴠɪᴅᴇᴏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ </code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀ ɴᴀᴍᴇ** {sender_name}",
                 )
     else:
-        out = private_panel(_)
+        out = music_start_panel(_)
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
