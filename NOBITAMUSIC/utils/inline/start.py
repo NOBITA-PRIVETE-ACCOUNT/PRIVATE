@@ -38,7 +38,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="۞ 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="settings_back_helper"
+                text="۞ 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="feature"
             )
         ],
     ]
