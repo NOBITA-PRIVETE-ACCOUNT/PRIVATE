@@ -1,3 +1,4 @@
+
 # Copyright (C) 2024 by VISHAL-PANDEY@Github, < https://github.com/vishalpandeynkp1 >.
 #
 # This file is part of < https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO > project,
@@ -112,7 +113,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="NOBITAString4",
+            name="NOBITYAString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
