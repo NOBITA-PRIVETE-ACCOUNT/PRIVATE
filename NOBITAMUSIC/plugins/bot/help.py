@@ -19,7 +19,7 @@ HELP_COMMAND = get_command("HELP_COMMAND")
 COLUMN_SIZE = 4
 NUM_COLUMNS = 3
 
-donate = "https://envs.sh/AeS.jpg"
+donate = "https://envs.sh/_2H.jpg"
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
@@ -455,17 +455,17 @@ async def tools_callback_cb(client, CallbackQuery, _):
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
-            InlineKeyboardButton(text="🔰ᴏᴡɴᴇʀ🔰", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text="♕σωηєя♕", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(
-                text="📍sᴜᴅᴏᴇʀs📍", url=f"https://t.me/{app.username}?start=sudo"
+                text="🎖 sυdσєяs 🎖 ", url=f"https://t.me/{app.username}?start=sudo"
             ),
         ],
         [
-            InlineKeyboardButton(text="🎁ɪɴsᴛᴀ🎁", url=f"instagram.com/the.vip.boy"),
-            InlineKeyboardButton(text="💲ʏᴏᴜᴛᴜʙᴇ💲", url=f"youtube.com/@THE_VIP_BOY"),
+            InlineKeyboardButton(text="✉ ιɴsтαgяαм ✉", url=f"instagram.com/nobita_bot_maker"),
+            InlineKeyboardButton(text="📹 yσυтυвє 📹", url=f"youtube.com/@gojo_zolo_pubg_hack"),
         ],
         [
-            InlineKeyboardButton(text="🔙 Back", callback_data="about")
+            InlineKeyboardButton(text="✙ вαcк ✙", callback_data="about")
         ],  # Use a default label for the back button
     ]
     await callback_query.message.edit_text(
@@ -479,7 +479,7 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
             InlineKeyboardButton(
-                text="⚜️ ᴋɪᴅɴᴀᴘ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ⚜️",
+                text="✚ кι∂иαρ мє ιи иєw gяσυρ σя cнαииєℓ ✚",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
@@ -501,7 +501,7 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
 ❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
-    ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
+   ✚ ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs ✚
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━**"""
     await callback_query.message.edit_text(
         text=k, reply_markup=InlineKeyboardMarkup(keyboard)
